@@ -1,0 +1,19 @@
+<md-toolbar layout="row" class="md-hue-2" ng-show="IOWLToolbar.isEnabled()">
+	<div layout="row" layout-align="start center" class="md-toolbar-tools">
+		
+		<!-- BACK -->
+		<div ng-show="IOWLToolbar.isEnabled('back-button')">
+			<md-button ng-click="IOWLToolbar.back()" layout="column" layout-align="center center"><i class="zmdi zmdi-hc-3x zmdi-arrow-left"></i></md-button>
+		</div>
+	
+		<!-- MENU -->
+		<div style="margin-left:-30px;" ng-show="IOWLToolbar.isEnabled('menu-button')">
+			<md-button ng-click="IOWLToolbar.menuClick()" layout="column" layout-align="center center"><i class="zmdi zmdi-hc-3x zmdi-menu"></i></md-button>	
+		</div>
+		
+		<!-- TITLE -->
+		<div flex layout="row" layout-align="center center" ng-click="IOWLToolbar.titleClick($event)">
+			<h1 style="margin-left: -80px;"><b>{{IOWLToolbar.title()}}</b></h1>
+		</div>
+	</div>
+</md-toolbar>

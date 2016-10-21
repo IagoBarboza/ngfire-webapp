@@ -1,0 +1,15 @@
+#login-main-container{
+	background-color:#1A237E;
+}
+
+#auth-form{
+	margin-left:-30px;
+}
+
+#email-input{
+	margin-left: 5px;
+}
+
+#password-input{
+	margin-left: 5px;
+}

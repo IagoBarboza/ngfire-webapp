@@ -1,0 +1,24 @@
+<div id="login-main-container" layout-fill flex layout="column" layout-align="center center">
+	<!-- LOGO -->
+	<img src="img/logo.svg" height="100" width="200">
+	
+	<!-- AUTH FORM -->
+	<form id="auth-form" layout="column" layout-align="center start">
+		
+		<!-- EMAIL -->
+		<div layout="row">
+			<img src="img/user.svg" height="30" width="30">
+			<input id="email-input" ng-model="email" type="text" name="email" placehoder="email">	
+		</div>
+
+		<!-- PASSWORD -->
+		<div layout="row" style="margin-top:10px;">
+			<img src="img/padlock.svg" height="30" width="30">
+			<input id="password-input" ng-model="password" type="password" name="password" placeholder="password">
+		</div>
+	</form>
+
+	<!-- LOGIN BUTTON -->
+	<md-button style="margin-top:20px;" class="md-raised md-primary" ng-click="login()">LOGIN</md-button>
+
+</div>
